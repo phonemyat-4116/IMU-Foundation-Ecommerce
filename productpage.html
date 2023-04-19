@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producat Page</title>
+    <!-- fav icon  -->
+    <link href="./logo/logoTo.png" class="fav" rel="icon" type="text/icon">
+    <!-- css  -->
+    <link href="./css/productpage.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="first-nav">
+                <ul class="contact-nav">
+                    <li><a href="#"><i class="fa-solid fa-headset">&nbsp;</i> +959 795369857</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope">&nbsp;</i> myat57116@gmail.com</a></li>
+                </ul>
+    
+                <ul class="user-nav">
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot">&nbsp;</i> See Location</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user">&nbsp;</i> My Account</a></li>
+                    <li>
+                        <form action="">
+                            <select id="language">
+                                <option value="eng" selected>English</option>
+                                <option value="eng">Chinese</option>
+                                <option value="eng">Japanese</option>
+                                <option value="eng">Burmese</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>    
+            </div>
+
+            <div class="second-nav">
+                <ul class="brand-nav">
+                    <li><a href="#"><img src="./logo/logoTo.png" class="brand-logo"></a></li>
+                    <li class="search-div">
+                        <form action="">
+                            <input type="text" id="search" class="search" name="search" placeholder="Search your Product...">
+                            <a href="#" class="search-btn">Search</a>
+                        </form> 
+                    </li>
+                    <li>
+                        <ul class="cart-nav">
+                            <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;<sup id="noti" class="noti">0</sup></a></li>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;<sup id="noti" class="noti">3</sup></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-container">
+
+        <div class="product-heading">
+            <p class="entertain">Entertainment</p>
+
+            <div class="oth-catag">
+                <ul>
+                    <li><p>Other Catagories</p></li>
+                    <li><a href="">Designer Tool</a></li>
+                    <li><a href="">AI Tool</a></li>
+                    <li><a href="">Antivirus</a></li>
+                    <li><a href="">OS Tool</a></li>
+                    <li><a href="">VPN</a></li>
+                    <li><a href="">Storage</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="filter-container">
+                <div class="filter-sub">
+                    <p>Filter</p>
+                    <a href="">Reset</a>
+                </div>
+
+                <div class="price-container">
+                    <p>Price</p>
+
+                    <div>
+                        <small>Max Price - <span id="price">10,000 MMK</span></small>
+                        <input type="number" id="max-price" class="price-form" >
+                        <small class="mmk">MMK</small>
+                    </div>
+
+                    <div>
+                        <small>Min Price - <span id="price">8,000 MMK</span></small>
+                        <input type="number" id="min-price" class="price-form">
+                        <small class="mmk">MMK</small>
+                    </div>
+                </div>
+                
+                <div class="entertain-list">
+                    <p>Type</p>
+                    <ul>
+                        <li><input type="checkbox" id="check" class="check-form"> &nbsp; Movies</li>
+                        <li><input type="checkbox" id="check" class="check-form"> &nbsp; Music</li>
+                        <li><input type="checkbox" id="check" class="check-form"> &nbsp; Knowledge</li>
+                        <li><input type="checkbox" id="check" class="check-form"> &nbsp; Sport</li>
+                        <li><input type="checkbox" id="check" class="check-form"> &nbsp; 18 +</li>
+                    </ul>
+                    <a href="">See All</a>
+                </div>
+
+                <div class="period-list">
+                    <p>Period</p>
+                    <form action="">
+                        <ul>
+                            <li><input type="checkbox" id="check" class="check-form"> &nbsp; 1 months</li>
+                            <li><input type="checkbox" id="check" class="check-form"> &nbsp; 3 months</li>
+                            <li><input type="checkbox" id="check" class="check-form"> &nbsp; 6 months</li>
+                            <li><input type="checkbox" id="check" class="check-form"> &nbsp; 1 years</li>
+                            <li><input type="checkbox" id="check" class="check-form"> &nbsp;  Life Time</li>
+                        </ul>
+                    </form>
+                    <a href="">See All</a>
+                </div>
+
+                <div class="robot-container">
+                    <div class="robot-form-container">
+                        <div class="robot-sub">
+                            <form action="">
+                                <input type="checkbox" id="RoBot" class="notRobot-form"> &nbsp; I am not a Robot.
+                            </form>
+                            <img src="./image/png/notRobot.png" class="robot">
+                        </div>
+
+                        <a href="" class="filter-btn">Filter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-div">
+                <p class="found-item">Found <span id="items-count">100</span> items on search</p>
+
+                <div class="product-card-container">
+                    <div class="card">
+                        <div class="img-card">
+                            <a href="./product-detail.html"><img src="./image/Entertainment/Netflix.jpg"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Netflix</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="./addToCart.html">Add to Cart</a>
+                                <a href="./checkout.html">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href="./HBO-max.html"><img src="./image/Entertainment/HBO max.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">HBO max</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.6</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,500 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="./addToCart.html">Add to Cart</a>
+                                <a href="./checkout.html">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href="./Prime-video.html"><img src="./image/Entertainment/prime.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Prime Video</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.9</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">13,200 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="./addToCart.html">Add to Cart</a>
+                                <a href="./checkout.html">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href="./Disney+.html"><img src="./image/Entertainment/Disney plus.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Disney +</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.2</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">11,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="./addToCart.html">Add to Cart</a>
+                                <a href="./checkout.html">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/Youtube.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">YouTube Premium</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/hulu.jpg"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">hulu</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">8,500 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/britbox.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">brit box</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">10,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/pornhublogo.jpg"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Porn Hub</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">9,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/Plex movie.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Plex Movies</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/OPTUS Sport.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">OPTUS Sport</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/IPTV.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">IPTV</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/spotify.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Spotify</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/applemusic.jpg"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">Apple Music</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="card">
+                        <div class="img-card">
+                            <a href=""><img src="./image/Entertainment/imdb.png"></a>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="card-product">
+                                <p class="card-head">IMDB</p>
+                                <p><i class="fa-solid fa-star" style="color: orange;"></i>&nbsp; 4.8</p>
+                            </div>
+
+                            <div class="price-info">
+                                <p class="price-tag">12,000 MMK</p>
+                                <p class="price-status">Popular</p>
+                            </div>
+
+                            <div class="card-btn">
+                                <a href="">Add to Cart</a>
+                                <a href="">Buy</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start footer section -->
+    <section class="footer-sec">
+        <div class="footer">
+            <div class="footer-image">
+                <img src="./logo/logoTo.png" class="footer-logo">
+    
+                <p>Availabe Paying Method</p>
+    
+                <div class="visa-div">
+                    <img src="./image/paypal.jpg">
+                    <img src="./image/visa.jpg" class="marg">
+                    <img src="./image/mastercard.jpg">
+                </div>
+            </div>
+    
+            <div class="quick-link">
+                <p>Quick Links</p>
+                <ul class="footer-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Popular</a></li>
+                    <li><a href="./index.html">Service</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                </ul>
+            </div>
+                
+    
+            <div class="term-condition">
+                <h3>Terms and Condition</h3>
+    
+                <p>Welcome to our Digital Account Market. By using our services, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before using our services.</p>
+    
+                <a href="./Aboutus.html">Read More</a>
+            </div>
+        </div>
+
+        <p class="copy-right">© 2023 Phone Myat Thu. All rights reserved.</p>
+        
+    </section>
+    <!-- end footer section  -->
+
+    <script src="./js/productpage.js" type="text/javascript"></script>
+</body>
+</html>

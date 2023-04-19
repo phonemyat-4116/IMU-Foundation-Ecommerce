@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <!-- fav icon  -->
+    <link href="./logo/logoTo.png" class="fav" rel="icon" type="text/icon">
+    <!-- css  -->
+    <link href="./css/checkout.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="first-nav">
+                <ul class="contact-nav">
+                    <li><a href="#"><i class="fa-solid fa-headset">&nbsp;</i> +959 795369857</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope">&nbsp;</i> myat57116@gmail.com</a></li>
+                </ul>
+    
+                <ul class="user-nav">
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot">&nbsp;</i> See Location</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user">&nbsp;</i> My Account</a></li>
+                    <li>
+                        <form action="">
+                            <select id="language">
+                                <option value="eng" selected>English</option>
+                                <option value="eng">Chinese</option>
+                                <option value="eng">Japanese</option>
+                                <option value="eng">Burmese</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>    
+            </div>
+
+            <div class="second-nav">
+                <ul class="brand-nav">
+                    <li><a href="#"><img src="./logo/logoTo.png" class="brand-logo"></a></li>
+                    <li class="search-div">
+                        <form action="">
+                            <input type="text" id="search" class="search" name="search" placeholder="Search your Product...">
+                            <a href="#" class="search-btn">Search</a>
+                        </form> 
+                    </li>
+                    <li>
+                        <ul class="cart-nav">
+                            <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;<sup id="noti" class="noti">0</sup></a></li>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;<sup id="noti" class="noti">3</sup></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="shopping-cart-head">
+        <h1>#Check Out</h1>
+    </section>
+
+    <!-- start checkout section  -->
+    <section class="checkout-main" style="background-color: #f4f4f4;">
+
+        <div class="checkout-container" style="background-color: #fff;">
+            <h2>Shipping Information</h2>
+            <form>
+                <table class="shipping-info">
+                    <tr>
+                        <td colspan="2" style="margin: 5px 0; display: inline-block;">Name</td>
+                    </tr>
+            
+                    <tr>
+                        <td><input type="text" id="fname" class="form-control fname" placeholder="First Name"></td>
+                        <td><input type="text" id="lname" class="form-control lname" placeholder="Last Name"></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2" style="margin: 5px 0; display: inline-block;">Contact</td>
+                    </tr>
+            
+                    <tr>
+                        <td><input type="text" id="ph-no" class="form-control ph-no" placeholder="Phone Number"></td>
+                        <td><input type="email" id="email" class="form-control email" placeholder="Email"></td>
+                    </tr>
+        
+                    <tr class="addr">
+                        <td colspan="2">Address</td>
+                    </tr>
+            
+                    <tr>
+                        <td><input type="text" id="house-no" class="form-control house-no" placeholder="House No"></td>
+                        <td><input type="text" id="stress-name" class="form-control stress-name" placeholder="Street Name"></td>
+                    </tr>
+        
+                    <tr class="sec-addr">
+                        <td><input type="text" id="township-name" class="form-control township-name" placeholder="Township"></td>
+                        <td><input type="text" id="country-name" class="form-control country-name" placeholder="Country"></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2"><a href="">Pin Exact Location</a></td>
+                        <td></td>
+                    </tr>
+        
+                    <tr class="total-amount">
+                        <td>Total To Pay : </td>
+                        <td>48,000 MMK</td>
+                    </tr>
+                </table>
+            </form>
+
+            <h2>Payment Information</h2>
+
+            <form action="">
+                <div class="payment-type">
+                    <div class="pay-card">
+                        <input type="radio" id="visa" name="payment" value="visa">
+                        <label for="visa"><img src="./image/visa.jpg" width="50px"></label>
+                    </div>
+    
+                    <div class="pay-card">
+                        <input type="radio" id="master" name="payment" value="master">
+                        <label for="master"><img src="./image/mastercard.jpg" width="50px"></label>
+                    </div>
+    
+                    <div class="pay-card">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label for="paypal"><img src="./image/paypal.jpg" width="50px"></label>
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <table class="payment-info">
+    
+                    <tr>
+                        <td><input type="text" id="name-card" name="" class="form-control" value="" placeholder="Name On Card"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="password" id="name-number" name="" class="form-control" value="" placeholder="Card Number"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="date" id="date" name="" value="" class="form-control" placeholder="Card Number"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="text" id="cvc" name="" value="" class="form-control" placeholder="CVC"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><button id="pay">Pay <span id="amount">48,000 MMK</span></button></td>
+                    </tr>
+                </table>
+            </form>
+        </div> 
+    </section>
+    <!-- end checkout section  -->
+
+    <!-- start footer section -->
+    <section class="footer-sec">
+        <div class="footer">
+            <div class="footer-image">
+                <img src="./logo/logoTo.png" class="footer-logo">
+    
+                <p>Availabe Paying Method</p>
+    
+                <div class="visa-div">
+                    <img src="./image/paypal.jpg">
+                    <img src="./image/visa.jpg" class="marg">
+                    <img src="./image/mastercard.jpg">
+                </div>
+            </div>
+    
+            <div class="quick-link">
+                <p>Quick Links</p>
+                <ul class="footer-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Popular</a></li>
+                    <li><a href="./index.html">Service</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                </ul>
+            </div>
+                
+    
+            <div class="term-condition">
+                <h3>Terms and Condition</h3>
+    
+                <p>Welcome to our Digital Account Market. By using our services, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before using our services.</p>
+    
+                <a href="./Aboutus.html">Read More</a>
+            </div>
+        </div>
+
+        <p class="copy-right">© 2023 Phone Myat Thu. All rights reserved.</p>
+        
+    </section>
+    <!-- end footer section  -->
+</label>
+
+</body>
+</html>

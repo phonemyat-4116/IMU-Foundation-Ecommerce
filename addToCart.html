@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <!-- fav icon  -->
+    <link href="./logo/logoTo.png" class="fav" rel="icon" type="text/icon">
+    <!-- css  -->
+    <link href="./css/addToCart.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="first-nav">
+                <ul class="contact-nav">
+                    <li><a href="#"><i class="fa-solid fa-headset">&nbsp;</i> +959 795369857</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope">&nbsp;</i> myat57116@gmail.com</a></li>
+                </ul>
+    
+                <ul class="user-nav">
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot">&nbsp;</i> See Location</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user">&nbsp;</i> My Account</a></li>
+                    <li>
+                        <form action="">
+                            <select id="language">
+                                <option value="eng" selected>English</option>
+                                <option value="eng">Chinese</option>
+                                <option value="eng">Japanese</option>
+                                <option value="eng">Burmese</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>    
+            </div>
+
+            <div class="second-nav">
+                <ul class="brand-nav">
+                    <li><a href="#"><img src="./logo/logoTo.png" class="brand-logo"></a></li>
+                    <li class="search-div">
+                        <form action="">
+                            <input type="text" id="search" class="search" name="search" placeholder="Search your Product...">
+                            <a href="#" class="search-btn">Search</a>
+                        </form> 
+                    </li>
+                    <li>
+                        <ul class="cart-nav">
+                            <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;<sup id="noti" class="noti">0</sup></a></li>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;<sup id="noti" class="noti">3</sup></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="shopping-cart-head">
+        <h1>#Shopping Cart</h1>
+    </section>
+
+    <!-- start add to cart section -->
+    <section class="main-container" style="background-color: #f4f4f4;">
+
+        <div class="shopping-list">
+            <table>
+                <tr class="heading-row">
+                    <td class="heading">Product</td>
+                    <td class="heading">Quantity</td>
+                    <td class="heading">Price</td>
+                    <td class="heading"></td>
+                </tr>
+    
+                <tr>
+                    <td class="col">
+                        <div class="product-items">
+                            <img src="./image/Entertainment/netflix.png" width="80px" height="80px">
+                            <div class="product-info">
+                                <p>Netflix || Entertainment</p>
+                                <small>3 Months Account</small>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <td class="td-center">
+                        <form action="">
+                            <input type="number" id="list-quantity" value="1">
+                        </form>
+                    </td>
+    
+                    <td class="td-center">
+                        <p>15,000 MMK</p>
+                    </td>
+    
+                    <td class="td-center">
+                        <button id="remove-item">Remove</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="col">
+                        <div class="product-items">
+                            <img src="./image/Entertainment/prime.png" width="80px" height="80px">
+                            <div class="product-info">
+                                <p>Prime Video || Entertainment</p>
+                                <small>1 Months Account</small>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <td class="td-center">
+                        <form action="">
+                            <input type="number" id="list-quantity" value="1">
+                        </form>
+                    </td>
+    
+                    <td class="td-center">
+                        <p>13,000 MMK</p>
+                    </td>
+    
+                    <td class="td-center">
+                        <button id="remove-item">Remove</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="col">
+                        <div class="product-items">
+                            <img src="./image/Entertainment/HBO max.png" width="80px" height="80px">
+                            <div class="product-info">
+                                <p>HBO max || Entertainment</p>
+                                <small>6 Months Account</small>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <td class="td-center">
+                        <form action="">
+                            <input type="number" id="list-quantity" value="1">
+                        </form>
+                    </td>
+    
+                    <td class="td-center">
+                        <p>20,000 MMK</p>
+                    </td>
+    
+                    <td class="td-center">
+                        <button id="remove-item">Remove</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="action-line">
+                <a href="./productpage.html" class="back-shop"><i class="fa-solid fa-arrow-left"></i> &nbsp; Back to shopping</a>
+                <a href="./checkout.html" class="purchase">Make Purchase</a>
+            </div>
+        </div>
+        
+
+        <div class="total-price-container">
+            <div class="price-main">
+                <form action="" class="copon-form-main">
+                    <label for="coupon">Have a coupon?</label>
+                    <div class="copon-form">
+                        <input type="text" id="coupon" value="">
+                        <button id="apply">Apply</button>
+                    </div>
+                </form>
+
+                <div class="total-main">
+                    <table>
+                        <tr class="check-out">
+                            <td>Total Price:</td>
+                            <td>150,000 MMK</td>
+                        </tr>
+
+                        <tr class="check-out">
+                            <td>Discount:</td>
+                            <td>3,000 MMK</td>
+                        </tr>
+
+                        <tr class="check-out">
+                            <td>Total:</td>
+                            <td>120,000 MMK</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="payment">
+                    <img src="./image/mastercard.jpg" alt="" width="50px">
+                    <img src="./image/visa.jpg" alt="" width="50px">
+                    <img src="./image/paypal.jpg" alt="" width="50px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end add to cart section  -->
+
+    <!-- start footer section -->
+    <section class="footer-sec">
+        <div class="footer">
+            <div class="footer-image">
+                <img src="./logo/logoTo.png" class="footer-logo">
+    
+                <p>Availabe Paying Method</p>
+    
+                <div class="visa-div">
+                    <img src="./image/paypal.jpg">
+                    <img src="./image/visa.jpg" class="marg">
+                    <img src="./image/mastercard.jpg">
+                </div>
+            </div>
+    
+            <div class="quick-link">
+                <p>Quick Links</p>
+                <ul class="footer-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Popular</a></li>
+                    <li><a href="./index.html">Service</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                </ul>
+            </div>
+                
+    
+            <div class="term-condition">
+                <h3>Terms and Condition</h3>
+    
+                <p>Welcome to our Digital Account Market. By using our services, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before using our services.</p>
+    
+                <a href="./Aboutus.html">Read More</a>
+            </div>
+        </div>
+
+        <p class="copy-right">© 2023 Phone Myat Thu. All rights reserved.</p>
+        
+    </section>
+    <!-- end footer section  -->
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney +</title>
+    <!-- fav icon  -->
+    <link href="./logo/logoTo.png" class="fav" rel="icon" type="text/icon">
+    <!-- css  -->
+    <link href="./css/product-detail.css" rel="stylesheet" type="text/css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="first-nav">
+                <ul class="contact-nav">
+                    <li><a href="#"><i class="fa-solid fa-headset">&nbsp;</i> +959 795369857</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope">&nbsp;</i> myat57116@gmail.com</a></li>
+                </ul>
+    
+                <ul class="user-nav">
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot">&nbsp;</i> See Location</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user">&nbsp;</i> My Account</a></li>
+                    <li>
+                        <form action="">
+                            <select id="language">
+                                <option value="eng" selected>English</option>
+                                <option value="eng">Chinese</option>
+                                <option value="eng">Japanese</option>
+                                <option value="eng">Burmese</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>    
+            </div>
+
+            <div class="second-nav">
+                <ul class="brand-nav">
+                    <li><a href="#"><img src="./logo/logoTo.png" class="brand-logo"></a></li>
+                    <li class="search-div">
+                        <form action="">
+                            <input type="text" id="search" class="search" name="search" placeholder="Search your Product...">
+                            <a href="#" class="search-btn">Search</a>
+                        </form> 
+                    </li>
+                    <li>
+                        <ul class="cart-nav">
+                            <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;<sup id="noti" class="noti">0</sup></a></li>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;<sup id="noti" class="noti">3</sup></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- start product detail  -->
+    <section class="main-product">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./image/Entertainment/Disney plus.png">
+            </div>
+    
+            <div class="product-info">
+                <h1>Disney + || The Entertainment</h1>
+                <div class="rating-container">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="customer">21K Customers</p>
+                </div>
+                
+
+                <p class="in-stock">In Stock</p>
+
+                <div class="price-container">
+                    <p class="price" id="netflix-account">120,000 MMK</p>
+                    <s id="discount">150,000 MMK</s>
+                </div>
+
+                <div class="package-plan">
+                    <button class="plan-btn active">1 Month</button>
+                    <button class="plan-btn">3 Months</button>
+                    <button class="plan-btn">6 Months</button>
+                    <button class="plan-btn">1 Year</button>
+                </div>
+
+                <form action="">
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </form>
+
+                <form action="" class="action-btn">
+                    <div class="quantity-container">
+                        <button id="plus"><i class="fa-solid fa-plus"></i></button>
+                        <span id="quantity">0</span>
+                        <button id="minus"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+
+                    <!-- <input type="submit" id="add-cart" value="Add To Cart"> -->
+                    <a href="./addToCart.html" id="add-cart">Add To Cart</a>
+                </form>
+
+                <div class="review-main">
+                    <h2>Customer Review</h2>
+
+                    <div class="review-rate">
+                        <p>4.9 /</p>
+                        <small>2,251 Reviews</small>
+                    </div>
+
+                    <a href="#write-review-container" id="write-review">Write Review</a>
+
+                    <div class="review-main-container">
+
+                        <div class="reviews-container">
+                            <div class="review-info">
+                                <img src="./image/customer/customer1.jpg">
+                                <p>SARAH</p>
+                            </div>
+    
+                            <div class="customer-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+    
+                            <small class="review-date">3/31/2023</small>
+                            <p class="customer-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa mollitia, odio explicabo blanditiis non iusto iure eveniet inventore</p>
+                        </div>
+    
+                        <div class="reviews-container">
+                            <div class="review-info">
+                                <img src="./image/customer/customer2.jpg">
+                                <p>Johnathan</p>
+                            </div>
+    
+                            <div class="customer-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+    
+                            <small class="review-date">3/31/2023</small>
+                            <p class="customer-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa mollitia, odio explicabo blanditiis non iusto iure eveniet inventore</p>
+                        </div>
+
+                        <a href="" class="all-review">View All Review ></a>
+                    </div>
+
+                    <div id="write-review-container">
+                        <h2>Write a review</h2>
+
+                        <form action="" id="form-review">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="review">Review</label>
+                                <textarea id="review-box" class="form-control" rows="7"></textarea>
+                            </div>
+
+                            <input type="submit" id="submit-review" onclick="thankCustomer()" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end product detail  -->
+
+    <!-- start footer section -->
+    <section class="footer-sec">
+        <div class="footer">
+            <div class="footer-image">
+                <img src="./logo/logoTo.png" class="footer-logo">
+    
+                <p>Availabe Paying Method</p>
+    
+                <div class="visa-div">
+                    <img src="./image/paypal.jpg">
+                    <img src="./image/visa.jpg" class="marg">
+                    <img src="./image/mastercard.jpg">
+                </div>
+            </div>
+    
+            <div class="quick-link">
+                <p>Quick Links</p>
+                <ul class="footer-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Popular</a></li>
+                    <li><a href="./index.html">Service</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                </ul>
+            </div>
+                
+    
+            <div class="term-condition">
+                <h3>Terms and Condition</h3>
+    
+                <p>Welcome to our Digital Account Market. By using our services, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before using our services.</p>
+    
+                <a href="./Aboutus.html">Read More</a>
+            </div>
+        </div>
+
+        <p class="copy-right">© 2023 Phone Myat Thu. All rights reserved.</p>
+        
+    </section>
+    <!-- end footer section  -->
+
+    <script src="./js/product-detail.js"></script>
+</body>
+</html>
